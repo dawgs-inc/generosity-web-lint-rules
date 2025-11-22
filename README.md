@@ -22,16 +22,16 @@ npm install -D eslint-config-suda \
 
 ```js
 // eslint.config.js (CommonJS)
-const suda = require('eslint-config-suda');
+const myRules = require('eslint-config-suda');
 
-module.exports = suda;
+module.exports = myRules;
 ```
 
 ```js
 // eslint.config.js (ESM)
-import suda from 'eslint-config-suda';
+import myRules from 'eslint-config-suda';
 
-export default suda;
+export default myRules;
 ```
 
 TypeScriptを使わないプロジェクトでも動きますが、パーサとプラグインは peerDependencies として必須なので、インストールは忘れずに。`@typescript-eslint/*@8.47.0` は `eslint@^9.0.0` とセットで動くことを前提にしています。
