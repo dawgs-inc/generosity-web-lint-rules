@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-suda",
+  "name": "generosity-web-lint-rules",
   "version": "1.0.0",
   "description": "Readable TypeScript向けに調整したESLint共有設定",
   "main": "config/index.js",
