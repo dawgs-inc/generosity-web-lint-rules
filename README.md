@@ -1,4 +1,4 @@
-# eslint-config-suda
+# generosity-web-lint-rules
 
 TypeScriptの可読性・保守性を高めるためのESLint共有設定です。  
 ルールは`config/index.js`にまとまっており、Guard Clause推奨や命名規約など、`.eslintrc.js`で使っていたものをそのままパッケージ化しています。
