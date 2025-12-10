@@ -21,6 +21,23 @@ import myRules from 'eslint-config-suda';
 export default myRules;
 ```
 
+もしくは、index.jsをそのままコピペして持ってくることもできます
+```eslint.config.js
+{
+    plugins: {
+      import: importPlugin,
+    },
+    rules: {
+      /* -----------------------------------------------------------
+       * 第II部：ループとロジックの単純化
+       * 原則：制御フローを読みやすくする / ネストを浅くする / 早期リターン
+       * ----------------------------------------------------------- */
+
+      // elseブロックを使わず、早期リターン（Guard Clause）を推奨する
+      // 「ネストを浅くする」ための強力なルールです。
+      'no-else-return': ['error', { allowElseIf: false }],
+```
+
 TypeScriptを使わないプロジェクトでも動きますが、パーサとプラグインは peerDependencies として必須なので、インストールは忘れずに。`@typescript-eslint/*@8.47.0` は `eslint@^9.0.0` とセットで動くことを前提にしています。
 
 ## 動作確認フロー
