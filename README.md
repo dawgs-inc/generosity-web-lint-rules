@@ -3,19 +3,6 @@
 TypeScriptの可読性・保守性を高めるためのESLint共有設定です。  
 ルールは`config/index.js`にまとまっており、Guard Clause推奨や命名規約など、`.eslintrc.js`で使っていたものをそのままパッケージ化しています。
 
-## インストール
-
-```bash
-npm install -D generosity-web-lint-rules \
-  eslint@^9.0.0 \
-  @typescript-eslint/parser@^8.47.0 \
-  @typescript-eslint/eslint-plugin@^8.47.0 \
-  typescript-eslint@^8.47.0 \
-  eslint-plugin-import \
-  eslint-config-prettier \
-  prettier
-```
-
 ## 使い方
 
 `eslint.config.js` (または `eslint.config.mjs/ts`) で共有設定をそのままエクスポートしてください。
