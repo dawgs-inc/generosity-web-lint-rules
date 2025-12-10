@@ -6,13 +6,13 @@ const prettier = require('eslint-config-prettier/flat');
 /** @type {import('eslint').FlatConfig.ConfigArray} */
 module.exports = tseslint.config(
   {
-    name: 'suda/ignores',
+    name: 'generosity/ignores',
     ignores: ['dist/**', 'coverage/**'],
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
-    name: 'suda/rules',
+    name: 'generosity/rules',
     files: ['**/*.{js,jsx,ts,tsx}'],
     plugins: {
       import: importPlugin,
