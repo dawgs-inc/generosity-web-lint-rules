@@ -6,7 +6,7 @@ TypeScriptの可読性・保守性を高めるためのESLint共有設定です�
 ## インストール
 
 ```bash
-npm install -D eslint-config-suda \
+npm install -D generosity-web-lint-rules \
   eslint@^9.0.0 \
   @typescript-eslint/parser@^8.47.0 \
   @typescript-eslint/eslint-plugin@^8.47.0 \
