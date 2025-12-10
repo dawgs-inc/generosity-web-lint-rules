@@ -9,14 +9,14 @@ TypeScriptの可読性・保守性を高めるためのESLint共有設定です�
 
 ```js
 // eslint.config.js (CommonJS)
-const myRules = require('eslint-config-suda');
+const myRules = require('generosity-web-lint-rules');
 
 module.exports = myRules;
 ```
 
 ```js
 // eslint.config.js (ESM)
-import myRules from 'eslint-config-suda';
+import myRules from 'generosity-web-lint-rules';
 
 export default myRules;
 ```
@@ -44,8 +44,8 @@ TypeScriptを使わないプロジェクトでも動きますが、パーサと�
 
 1. `npm run lint:test`  
    `eslint --config config/index.js --print-config config/index.js` で共有設定が読み込めるか確認できます
-2. `npm pack` → 別プロジェクトで `npm install ../suda-lint-rules-*.tgz`  
-   実際に `extends: ['eslint-config-suda']` を書いて読み込めるか検証してください
+2. `npm pack` → 別プロジェクトで `npm install ../generosity-web-lint-rules-*.tgz`  
+   実際に `extends: ['generosity-web-lint-rules']` を書いて読み込めるか検証してください
 
 ## 公開前チェックリスト
 
